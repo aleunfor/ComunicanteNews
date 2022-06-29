@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityDetail"
+    android:background="@color/yellow">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/post_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="13dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="Titulo"
+            android:textColor="@color/black"/>
+
+        <WebView
+            android:id="@+id/post_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_below="@id/post_title"/>
+
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_link"
+        android:backgroundTint="@color/yellow"
+        android:contentDescription="Ir a WEB"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="15dp"/>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

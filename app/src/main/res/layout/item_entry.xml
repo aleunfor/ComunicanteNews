@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_post"
+    android:padding="15dp"
+    android:layout_margin="20dp"
+    app:cardElevation="8dp"
+    android:clickable="true"
+    app:cardCornerRadius="5dp">
+
+    <RelativeLayout
+        android:id="@+id/layout_post"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints"
+        android:backgroundTint="@color/yellow"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/entry_image"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/internet_paudiovisual" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/entry_image"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/date_entry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fecha"
+                android:textAlignment="textStart"
+                android:textColor="#000"
+                android:textSize="10sp"
+                />
+
+            <TextView
+                android:id="@+id/title_entry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/date_entry"
+                android:text="Titulo"
+                android:layout_alignParentBottom="true"
+                android:textAlignment="textStart"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+</com.google.android.material.card.MaterialCardView>
